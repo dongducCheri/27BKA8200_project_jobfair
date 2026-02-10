@@ -2,9 +2,9 @@
 
 Hệ thống quản lý nhân khẩu hiện đại với tính năng quản lý nhà văn hóa, được xây dựng bằng Next.js 14, TypeScript, Prisma và Tailwind CSS.
 
-## 🚀 Tính năng chính
+## Tính năng chính
 
-### 👨‍💼 Admin
+### Admin
 - **Quản lý hộ khẩu**: Tạo, xem, sửa, xóa thông tin hộ khẩu
 - **Quản lý nhân khẩu**: Quản lý thông tin các thành viên trong hộ khẩu
 - **Phân loại khu phố**: Quản lý và phân loại theo từng khu phố
@@ -12,19 +12,19 @@ Hệ thống quản lý nhân khẩu hiện đại với tính năng quản lý 
 - **Duyệt yêu cầu**: Xét duyệt các yêu cầu từ người dùng
 - **Thống kê**: Dashboard với các thống kê tổng quan
 
-### 👤 User
+### User
 - **Xem hộ khẩu**: Xem thông tin hộ khẩu của bản thân
 - **Tạo yêu cầu**: Gửi yêu cầu sửa thông tin, thêm/xóa nhân khẩu
 - **Đặt lịch nhà văn hóa**: Đặt lịch sử dụng với chế độ public/private
 - **Xem lịch trống**: Xem lịch trống và lịch đã đăng ký của nhà văn hóa
 
-### 🏢 Nhà văn hóa
+### Nhà văn hóa
 - **3 tòa nhà**: Quản lý tòa nhà A, B, C với thông tin chi tiết
 - **Đặt lịch**: Hệ thống đặt lịch với kiểm tra trùng lặp
 - **Chế độ hiển thị**: Public (mọi người xem được) hoặc Private (chỉ người đặt xem)
 - **Lịch trống**: Hiển thị lịch trống theo từng tòa nhà và thời gian
 
-## 🛠️ Công nghệ sử dụng
+##  Công nghệ sử dụng
 
 - **Frontend**: Next.js 14, React 18, TypeScript
 - **Styling**: Tailwind CSS, Headless UI
@@ -33,7 +33,7 @@ Hệ thống quản lý nhân khẩu hiện đại với tính năng quản lý 
 - **Icons**: Lucide React
 - **Notifications**: React Hot Toast
 
-## 📦 Cài đặt
+##  Cài đặt
 
 ### Yêu cầu hệ thống
 - Node.js 18+ 
@@ -78,7 +78,7 @@ npm run dev
 
 Ứng dụng sẽ chạy tại `http://localhost:3000`
 
-## 🗄️ Cấu trúc database
+## Cấu trúc database
 
 ### Các bảng chính:
 - **User**: Thông tin người dùng (Admin/User)
@@ -90,7 +90,7 @@ npm run dev
 - **CulturalCenterBooking**: Lịch đặt nhà văn hóa
 - **Notification**: Thông báo
 
-## 🎯 Hướng dẫn sử dụng
+## Hướng dẫn sử dụng
 
 ### Đăng ký tài khoản Admin
 1. Truy cập `/register` để tạo tài khoản
@@ -109,7 +109,7 @@ UPDATE User SET role = 'ADMIN' WHERE email = 'your-email@example.com';
 2. **User**: Đăng nhập → Xem hộ khẩu → Tạo yêu cầu → Đặt lịch nhà văn hóa
 3. **Admin**: Duyệt yêu cầu → Quản lý lịch đặt
 
-## 🔧 API Endpoints
+## API Endpoints
 
 ### Authentication
 - `POST /api/auth/login` - Đăng nhập
@@ -153,7 +153,7 @@ UPDATE User SET role = 'ADMIN' WHERE email = 'your-email@example.com';
 - `GET /api/my-household` - Hộ khẩu của user
 - `GET /api/my-household/persons` - Nhân khẩu trong hộ khẩu
 
-## 🎨 Giao diện
+## Giao diện
 
 ### Trang chính
 - **Landing page**: Giới thiệu hệ thống
@@ -174,7 +174,7 @@ UPDATE User SET role = 'ADMIN' WHERE email = 'your-email@example.com';
 - **Đặt lịch**: Đặt lịch sử dụng nhà văn hóa
 - **Lịch trống**: Xem lịch trống và lịch đã đăng ký
 
-## 🔒 Bảo mật
+## Bảo mật
 
 - **JWT Authentication**: Xác thực bằng JWT token
 - **Role-based Access**: Phân quyền Admin/User
@@ -182,7 +182,7 @@ UPDATE User SET role = 'ADMIN' WHERE email = 'your-email@example.com';
 - **Input Validation**: Kiểm tra dữ liệu đầu vào
 - **SQL Injection Protection**: Sử dụng Prisma ORM
 
-## 🚀 Triển khai
+## Triển khai
 
 ### Production Build
 ```bash
@@ -197,14 +197,14 @@ JWT_SECRET=your-production-secret
 DATABASE_URL=your-production-database-url
 ```
 
-## 📝 Ghi chú
+## Ghi chú
 
 - Hệ thống sử dụng SQLite cho development, có thể chuyển sang PostgreSQL/MySQL cho production
 - Tất cả API đều có xử lý lỗi và validation
 - Giao diện responsive, hỗ trợ mobile
 - Hỗ trợ đa ngôn ngữ (hiện tại là tiếng Việt)
 
-## 🤝 Đóng góp
+## Đóng góp
 
 1. Fork repository
 2. Tạo feature branch
@@ -212,6 +212,6 @@ DATABASE_URL=your-production-database-url
 4. Push to branch
 5. Tạo Pull Request
 
-## 📄 License
+## License
 
 MIT License - xem file LICENSE để biết thêm chi tiết.
